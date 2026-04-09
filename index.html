@@ -1,0 +1,74 @@
+<!--Linguagem de marcação de Hiper texto-->
+<!--Framework = É algo que """Facilita""" seu trabalho dentro do código [não confundir com biblíoteca] ex: Bootstrap - Framework / Pickr - Biblioteca -->
+<!---->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas !</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mb-4">𝙏𝙚𝙡𝙖 𝙙𝙚 𝘿𝙚𝙨𝙚𝙣𝙝𝙤 — [<i class="bi bi-palette-fill" style="color: #6F42C1;"></i><i class="bi bi-brush-fill" style="color: #CC9A06"></i>] !</h1>
+        <div class="menu-topo">
+        <a href="index.html" class="btn btn-light btn-lg">Tela de Desenho</a>
+        <a href="galeria.html" class="btn btn-warning btn-lg">Galeria</a>
+        </div>
+      <div id="Cima">
+        <div class="col-auto">
+            <div id="corPicker"></div>
+            
+        </div>
+
+
+
+        <div class="col-auto">
+        <input type="range" id="espessura" class="form-range" min="1" max="100" value="3" style="width: 100px;">
+        </div>
+
+        <div class="col-auto form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="preencher">
+        <label class="form-check-label" for="preencher">Preencher</label>
+        </div>
+        
+      </div>
+        <div class="Canvas2">
+        <div class="" id="botões">
+            <div class="btn-group-vertical">
+                <button id="livre" class="btn"style="background-color: rgba(2, 255, 149, 0.527);"><i class="bi bi-pencil-fill"></i></button>
+                <button id="circulo" class="btn" style="background-color: rgba(2, 255, 149, 0.527)"><i class="bi bi-circle"></i></button>
+                <button id="quadrado" class="btn" style="background-color: rgba(2, 255, 149, 0.527);" ><i class="bi bi-square"></i></button>
+                <button id="linha" class="btn" style="background-color: rgba(2, 255, 149, 0.527);"><i class="bi bi-dash-lg"></i></button>
+                <button id="x" class="btn" style="background-color: rgba(2, 255, 149, 0.527);" ><i class="bi bi-x"></i></button>
+                <button id="borracha" class="btn " style="background-color: rgba(2, 255, 149, 0.527);"><i class="bi bi-eraser"></i></button>
+            </div>
+            
+        </div>
+    
+        
+        
+        <canvas id="meuCanvas" class=""></canvas>
+
+        <div class="" id="botões2">
+        <button id="desfazer" class="btn"><i class="bi bi-arrow-return-left"></i></button>
+        <button id="limpar" class="btn"><i class="bi bi-trash3"></i></button>
+        <button id="salvar" class="btn"><i class="bi bi-download"></i></button>
+        </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

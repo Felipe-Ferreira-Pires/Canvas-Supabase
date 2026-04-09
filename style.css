@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(2, 82, 173, 0.801);
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    color: white;
+}
+
+
+    canvas {
+  border: 4px solid rgb(75, 75, 75);
+  cursor: crosshair;
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  height: 800px;
+  max-width: 1500px;
+  aspect-ratio: 7 / 5;
+    }
+
+#botões {
+    flex-direction: column !important;
+    margin: 20px;
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+}
+
+.Canvas2 {
+    flex-direction: row;
+    display: flex;
+}
+
+#botões button {
+    margin-bottom: 25px;
+    width: 85px;
+    height: 85px;
+    font-size: 50px;
+    border-radius: 35px;
+}
+
+#botões2 button {
+    margin-top: 15px;
+    margin: 20px;
+    margin-bottom: 170px;
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 35px;
+    background-color: rgba(255, 30, 0, 0.356);
+}
+
+#Cima {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ 
+}
+
+#Cima input {
+ height: 60px;
+ width: 100px;
+ margin: 10px;
+}
+
+#Cima label {
+    font-size: 45px;
+    color: white;
+}
+
+.form-control-color {
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5em;
+}
+
+.menu-topo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-topo a {
+    border-radius: 20px;
+    padding: 12px 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* GALERIA */
+.galeria-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria-titulo {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.card-imagem {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 3px solid rgb(75, 75, 75);
+    border-radius: 25px;
+    padding: 15px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.card-imagem:hover {
+    transform: scale(1.03);
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.card-imagem p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 12px;
+}
